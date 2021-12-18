@@ -1,0 +1,18 @@
+﻿@using Sitecore.Data.Items
+@using Sitecore.Data
+@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc
+@model EvolvoBestPractice.Models.GrowthBanners
+
+@for (int val = 0; val < Model.ChildMember().Count; val++)
+{
+    <!-- Card -->
+    <div class="card">
+        <img class="card-image" src="@Model.ChildMember()[val].Image" alt="alternative">
+        <div class="card-body">
+            <h4 class="card-title">@Model.ChildMember()[val].Title</h4>
+            <p>@Model.ChildMember()[val].Description</p>
+        </div>
+    </div>
+    <!-- end of card -->
+}

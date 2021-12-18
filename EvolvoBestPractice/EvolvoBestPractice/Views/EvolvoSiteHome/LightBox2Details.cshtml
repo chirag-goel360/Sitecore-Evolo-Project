@@ -1,0 +1,20 @@
+﻿@using Sitecore.Data.Items
+@using Sitecore.Data
+@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc
+@model EvolvoBestPractice.Models.LightBox2
+
+<ul class="list-unstyled li-space-lg">
+    <li class="media">
+        <i class="fas fa-check"></i>
+        <div class="media-body">@Model.Details1()</div>
+    </li>
+    <li class="media">
+        <i class="fas fa-check"></i>
+        <div class="media-body">@Model.Details2()</div>
+    </li>
+    <li class="media">
+        <i class="fas fa-check"></i>
+        <div class="media-body">@Model.Details3()</div>
+    </li>
+</ul>

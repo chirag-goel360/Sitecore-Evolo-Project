@@ -1,0 +1,32 @@
+﻿@using Sitecore.Data.Items
+@using Sitecore.Data
+@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc
+@model EvolvoBestPractice.Models.Team_Members
+
+@foreach (var val in Model.ChildMember())
+{
+    <!-- Team Member -->
+    <div class="team-member">
+        <div class="image-wrapper">
+            <img class="img-fluid" src="@val.Image" alt="alternative">
+        </div> <!-- end of image-wrapper -->
+        <p class="p-large"><strong>@val.Name</strong></p>
+        <p class="job-title">@val.Role</p>
+        <span class="social-icons">
+            <span class="fa-stack">
+                <a href="@val.FacebookLink">
+                    <i class="fas fa-circle fa-stack-2x facebook"></i>
+                    <i class="fab fa-facebook-f fa-stack-1x"></i>
+                </a>
+            </span>
+            <span class="fa-stack">
+                <a href="@val.LinkedInLink">
+                    <i class="fas fa-circle fa-stack-2x twitter"></i>
+                    <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                </a>
+            </span>
+        </span> <!-- end of social-icons -->
+    </div>
+    <!-- end of team-member -->
+}

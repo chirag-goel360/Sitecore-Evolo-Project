@@ -1,0 +1,522 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\inetpub\wwwroot\SiteCoreDEVsc.dev.local</_PublishTargetUrl>
+    <History>True|2021-12-02T10:25:10.5839233Z;True|2021-12-02T15:42:10.5686850+05:30;True|2021-12-02T15:00:26.0547514+05:30;True|2021-11-28T17:49:32.2174646+05:30;True|2021-11-28T17:44:14.2336613+05:30;True|2021-11-28T17:38:54.4103355+05:30;True|2021-11-28T17:29:36.8882386+05:30;True|2021-11-28T17:27:06.2805171+05:30;True|2021-11-28T17:21:20.0178277+05:30;True|2021-11-28T17:15:32.8279555+05:30;True|2021-11-28T16:48:29.8152885+05:30;True|2021-10-25T14:18:29.9924376+05:30;True|2021-10-25T14:14:09.5873849+05:30;True|2021-10-25T14:10:24.8851985+05:30;True|2021-10-25T14:02:32.2193390+05:30;True|2021-10-21T18:10:26.5573896+05:30;True|2021-10-21T12:29:11.8619839+05:30;True|2021-10-21T12:24:13.2438633+05:30;True|2021-10-21T12:20:14.4372406+05:30;True|2021-10-21T12:19:18.6898820+05:30;True|2021-10-21T12:14:18.2815522+05:30;True|2021-10-20T11:00:37.9097356+05:30;True|2021-10-20T10:30:31.2446128+05:30;True|2021-10-18T21:09:54.4304663+05:30;True|2021-10-18T21:01:34.4612592+05:30;True|2021-10-18T21:00:22.7593482+05:30;True|2021-10-18T20:47:18.9120248+05:30;True|2021-10-18T20:33:19.6342807+05:30;True|2021-10-18T20:31:59.9966856+05:30;True|2021-10-18T16:14:49.1437408+05:30;True|2021-10-18T12:31:53.2301230+05:30;True|2021-10-18T12:14:57.5439612+05:30;True|2021-10-18T11:15:29.2603861+05:30;True|2021-10-18T11:10:46.3230975+05:30;True|2021-10-18T11:09:20.3945817+05:30;True|2021-10-18T11:03:23.5602327+05:30;True|2021-10-18T10:58:19.0081312+05:30;True|2021-10-15T10:53:43.5374615+05:30;True|2021-10-15T10:03:28.5227469+05:30;True|2021-10-15T10:01:27.7200090+05:30;True|2021-10-15T09:48:01.5770551+05:30;True|2021-10-15T08:52:25.8555865+05:30;True|2021-10-14T20:52:18.7274763+05:30;True|2021-10-14T16:33:07.2886464+05:30;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="App_Config/Glass/Glass.Mapper.Sc.config">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="App_Config/Glass/Glass.Mapper.Sc.Start.config">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="App_Config/Glass/z.Glass.Mapper.Sc.ViewRender.config.exclude">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="App_Config/Include/EvolvoBestPractice/SiteDefinition.config">
+      <publishTime>10/14/2021 16:41:43</publishTime>
+    </File>
+    <File Include="App_Config/Include/Glass/Glass.Mapper.Sc.config">
+      <publishTime>10/14/2021 20:40:03</publishTime>
+    </File>
+    <File Include="App_Config/Include/Glass/Glass.Mapper.Sc.Start.config.pp">
+      <publishTime>10/14/2021 20:40:03</publishTime>
+    </File>
+    <File Include="App_Config/Include/Glass/z.Glass.Mapper.Sc.ViewRender.config.exclude">
+      <publishTime>10/14/2021 20:40:03</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/css/bootstrap.css">
+      <publishTime>02/13/2019 17:47:50</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/css/fontawesome-all.css">
+      <publishTime>05/10/2018 15:03:52</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/css/magnific-popup.css">
+      <publishTime>12/01/2016 13:23:00</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/css/styles.css">
+      <publishTime>09/05/2019 21:32:08</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/css/swiper.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/images/contact-background.jpg">
+      <publishTime>05/27/2019 13:32:44</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/images/customer-logo-1.png">
+      <publishTime>04/19/2019 11:44:48</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/images/customer-logo-2.png">
+      <publishTime>04/19/2019 11:45:02</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/images/customer-logo-3.png">
+      <publishTime>04/19/2019 11:45:12</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/images/customer-logo-4.png">
+      <publishTime>04/19/2019 11:45:22</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/images/customer-logo-5.png">
+      <publishTime>04/19/2019 11:45:32</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/images/customer-logo-6.png">
+      <publishTime>04/19/2019 11:45:40</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/images/details-1-office-worker.svg">
+      <publishTime>05/28/2019 11:43:20</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/images/details-2-office-team-work.svg">
+      <publishTime>05/29/2019 13:00:44</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/images/details-lightbox-1.svg">
+      <publishTime>06/01/2019 12:18:28</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/images/details-lightbox-2.svg">
+      <publishTime>06/01/2019 12:14:34</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/images/down-arrow.png">
+      <publishTime>12/02/2018 00:22:22</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/images/ex-header-background.jpg">
+      <publishTime>06/01/2019 14:45:18</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/images/favicon.png">
+      <publishTime>05/28/2019 09:33:48</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/images/header-background.jpg">
+      <publishTime>05/19/2019 11:14:34</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/images/header-teamwork.svg">
+      <publishTime>05/25/2019 11:46:22</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/images/logo.svg">
+      <publishTime>05/27/2019 21:07:40</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/images/services-icon-1.svg">
+      <publishTime>05/27/2019 10:36:10</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/images/services-icon-2.svg">
+      <publishTime>05/27/2019 10:38:56</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/images/services-icon-3.svg">
+      <publishTime>05/27/2019 10:39:04</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/images/statement-icon-1.svg">
+      <publishTime>02/03/2019 22:35:42</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/images/team-member-1.svg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/images/team-member-2.svg">
+      <publishTime>05/31/2019 14:18:30</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/images/team-member-3.svg">
+      <publishTime>05/31/2019 14:27:36</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/images/team-member-4.svg">
+      <publishTime>05/31/2019 14:32:54</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/images/testimonial-1.svg">
+      <publishTime>05/30/2019 19:56:50</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/images/testimonial-2.svg">
+      <publishTime>05/30/2019 19:57:08</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/images/testimonial-3.svg">
+      <publishTime>05/30/2019 19:57:22</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/images/testimonials-2-men-talking.svg">
+      <publishTime>05/30/2019 19:10:22</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/images/testimonials-background.jpg">
+      <publishTime>05/30/2019 19:37:34</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/images/up-arrow.png">
+      <publishTime>01/04/2018 20:25:56</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/images/video-frame.svg">
+      <publishTime>05/30/2019 18:40:02</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/js/bootstrap.min.js">
+      <publishTime>02/13/2019 17:47:50</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/js/jquery.easing.min.js">
+      <publishTime>12/17/2016 22:11:04</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/js/jquery.magnific-popup.js">
+      <publishTime>12/17/2016 22:31:26</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/js/jquery.min.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/js/popper.min.js">
+      <publishTime>02/16/2019 23:54:58</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/js/scripts.js">
+      <publishTime>08/22/2019 14:45:12</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/js/swiper.min.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/js/validator.min.js">
+      <publishTime>12/17/2016 23:01:42</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/php/contactform-process.php">
+      <publishTime>06/24/2019 07:59:58</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/php/privacyform-process.php">
+      <publishTime>06/24/2019 08:00:04</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/php/requestform-process.php">
+      <publishTime>06/24/2019 08:00:10</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/webfonts/fa-brands-400.eot">
+      <publishTime>05/10/2018 15:03:52</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/webfonts/fa-brands-400.svg">
+      <publishTime>05/10/2018 15:03:52</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/webfonts/fa-brands-400.ttf">
+      <publishTime>05/10/2018 15:03:52</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/webfonts/fa-brands-400.woff">
+      <publishTime>05/10/2018 15:03:52</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/webfonts/fa-brands-400.woff2">
+      <publishTime>05/10/2018 15:03:52</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/webfonts/fa-regular-400.eot">
+      <publishTime>05/10/2018 15:03:52</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/webfonts/fa-regular-400.svg">
+      <publishTime>05/10/2018 15:03:52</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/webfonts/fa-regular-400.ttf">
+      <publishTime>05/10/2018 15:03:52</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/webfonts/fa-regular-400.woff">
+      <publishTime>05/10/2018 15:03:52</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/webfonts/fa-regular-400.woff2">
+      <publishTime>05/10/2018 15:03:52</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/webfonts/fa-solid-900.eot">
+      <publishTime>05/10/2018 15:03:52</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/webfonts/fa-solid-900.svg">
+      <publishTime>05/10/2018 15:03:52</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/webfonts/fa-solid-900.ttf">
+      <publishTime>05/10/2018 15:03:52</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/webfonts/fa-solid-900.woff">
+      <publishTime>05/10/2018 15:03:52</publishTime>
+    </File>
+    <File Include="AssetsEvolvoSite/webfonts/fa-solid-900.woff2">
+      <publishTime>05/10/2018 15:03:52</publishTime>
+    </File>
+    <File Include="bin/App_Config/Include/EvolvoBestPractice/SiteDefinition.config">
+      <publishTime>10/14/2021 16:41:43</publishTime>
+    </File>
+    <File Include="bin/EvolvoBestPractice.dll">
+      <publishTime>02/12/2021 15:42:10</publishTime>
+    </File>
+    <File Include="bin/EvolvoBestPractice.pdb">
+      <publishTime>02/12/2021 15:42:10</publishTime>
+    </File>
+    <File Include="bin/Glass.Mapper.dll">
+      <publishTime>03/22/2021 22:17:28</publishTime>
+    </File>
+    <File Include="bin/Glass.Mapper.pdb">
+      <publishTime>03/22/2021 22:17:28</publishTime>
+    </File>
+    <File Include="bin/Glass.Mapper.Sc.dll">
+      <publishTime>03/22/2021 22:17:32</publishTime>
+    </File>
+    <File Include="bin/Glass.Mapper.Sc.Mvc.dll">
+      <publishTime>03/22/2021 22:17:40</publishTime>
+    </File>
+    <File Include="bin/Glass.Mapper.Sc.Mvc.pdb">
+      <publishTime>03/22/2021 22:17:40</publishTime>
+    </File>
+    <File Include="bin/Glass.Mapper.Sc.pdb">
+      <publishTime>03/22/2021 22:17:32</publishTime>
+    </File>
+    <File Include="bin/Glass.Mapper.Sc.WebForms.dll">
+      <publishTime>03/22/2021 22:17:34</publishTime>
+    </File>
+    <File Include="bin/Glass.Mapper.Sc.WebForms.pdb">
+      <publishTime>03/22/2021 22:17:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>09/05/2018 16:10:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/25/2012 11:48:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>08/08/2018 12:18:12</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>08/08/2018 12:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>08/08/2018 12:18:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>08/08/2018 12:09:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>08/08/2018 12:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>12/05/2017 09:36:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>12/05/2017 09:36:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
+      <publishTime>08/08/2018 12:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>08/08/2018 12:09:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Win32.Primitives.dll">
+      <publishTime>11/05/2016 18:55:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>11/05/2016 18:55:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>05/16/2018 03:29:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Console.dll">
+      <publishTime>11/05/2016 18:55:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.DiagnosticSource.dll">
+      <publishTime>11/05/2016 18:55:52</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>11/05/2016 18:55:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>11/05/2016 18:55:52</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Globalization.Calendars.dll">
+      <publishTime>11/05/2016 18:56:02</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.dll">
+      <publishTime>11/05/2016 18:56:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.ZipFile.dll">
+      <publishTime>11/05/2016 18:56:04</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>11/05/2016 18:56:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>11/05/2016 18:56:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Net.Http.dll">
+      <publishTime>11/05/2016 18:56:30</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Net.Sockets.dll">
+      <publishTime>11/05/2016 18:56:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>05/16/2018 03:29:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Runtime.InteropServices.RuntimeInformation.dll">
+      <publishTime>11/05/2016 18:57:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>11/05/2016 18:57:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
+      <publishTime>11/05/2016 18:57:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
+      <publishTime>11/05/2016 18:57:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>11/05/2016 18:57:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>11/05/2016 18:57:20</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Threading.Tasks.Extensions.dll">
+      <publishTime>11/05/2016 18:57:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.ValueTuple.dll">
+      <publishTime>11/05/2016 18:57:30</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
+      <publishTime>11/05/2016 18:57:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
+      <publishTime>11/05/2016 18:57:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.dll">
+      <publishTime>11/05/2016 18:57:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
+      <publishTime>11/05/2016 18:57:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>08/08/2018 12:18:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>08/08/2018 12:09:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>08/08/2018 05:38:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>08/08/2018 12:18:16</publishTime>
+    </File>
+    <File Include="bin/Sitecore.Kernel.dll">
+      <publishTime>11/09/2019 23:42:26</publishTime>
+    </File>
+    <File Include="bin/Sitecore.Mvc.Analytics.dll">
+      <publishTime>11/13/2019 04:24:24</publishTime>
+    </File>
+    <File Include="bin/Sitecore.Mvc.dll">
+      <publishTime>11/13/2019 01:09:12</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>11/28/2018 13:04:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>02/01/2018 17:46:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>11/28/2018 13:00:12</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Deployment.dll">
+      <publishTime>11/28/2018 13:04:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.dll">
+      <publishTime>11/28/2018 13:04:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Razor.dll">
+      <publishTime>11/28/2018 13:04:24</publishTime>
+    </File>
+    <File Include="Models/CompanySlider.cs">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Models/ContactInfo.cs">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/EvoloSiteHome/Footer.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/EvoloSiteHome/Index.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/EvolvoSiteHome/CarouselLayout.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/EvolvoSiteHome/CarouselView.cshtml">
+      <publishTime>10/20/2021 12:41:48</publishTime>
+    </File>
+    <File Include="Views/EvolvoSiteHome/CompanyLogo.cshtml">
+      <publishTime>10/20/2021 14:31:53</publishTime>
+    </File>
+    <File Include="Views/EvolvoSiteHome/ContactDetails.cshtml">
+      <publishTime>11/28/2021 17:43:44</publishTime>
+    </File>
+    <File Include="Views/EvolvoSiteHome/DetailBox1.cshtml">
+      <publishTime>12/02/2021 15:54:34</publishTime>
+    </File>
+    <File Include="Views/EvolvoSiteHome/DetailBox2.cshtml">
+      <publishTime>12/02/2021 15:55:00</publishTime>
+    </File>
+    <File Include="Views/EvolvoSiteHome/Footer.cshtml">
+      <publishTime>11/28/2021 17:49:23</publishTime>
+    </File>
+    <File Include="Views/EvolvoSiteHome/FooterColumn1.cshtml">
+      <publishTime>11/29/2021 10:21:28</publishTime>
+    </File>
+    <File Include="Views/EvolvoSiteHome/GrowthBanners.cshtml">
+      <publishTime>10/20/2021 11:58:48</publishTime>
+    </File>
+    <File Include="Views/EvolvoSiteHome/GrowthDetails.cshtml">
+      <publishTime>10/20/2021 11:38:11</publishTime>
+    </File>
+    <File Include="Views/EvolvoSiteHome/Header.cshtml">
+      <publishTime>10/21/2021 12:32:31</publishTime>
+    </File>
+    <File Include="Views/EvolvoSiteHome/LightBox1.cshtml">
+      <publishTime>12/02/2021 15:03:17</publishTime>
+    </File>
+    <File Include="Views/EvolvoSiteHome/LightBox1Details.cshtml">
+      <publishTime>10/20/2021 15:17:25</publishTime>
+    </File>
+    <File Include="Views/EvolvoSiteHome/LightBox2.cshtml">
+      <publishTime>12/02/2021 15:03:10</publishTime>
+    </File>
+    <File Include="Views/EvolvoSiteHome/LightBox2Details.cshtml">
+      <publishTime>10/20/2021 15:21:01</publishTime>
+    </File>
+    <File Include="Views/EvolvoSiteHome/NewLayout.cshtml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Views/EvolvoSiteHome/PageDescription.cshtml">
+      <publishTime>11/28/2021 16:48:13</publishTime>
+    </File>
+    <File Include="Views/EvolvoSiteHome/PricingInformation.cshtml">
+      <publishTime>11/28/2021 17:29:28</publishTime>
+    </File>
+    <File Include="Views/EvolvoSiteHome/SocialIcons.cshtml">
+      <publishTime>11/28/2021 18:11:10</publishTime>
+    </File>
+    <File Include="Views/EvolvoSiteHome/TeamDescription.cshtml">
+      <publishTime>11/28/2021 17:38:20</publishTime>
+    </File>
+    <File Include="Views/EvolvoSiteHome/Team_Members.cshtml">
+      <publishTime>10/18/2021 21:01:29</publishTime>
+    </File>
+    <File Include="Views/EvolvoSiteHome/Testimonial.cshtml">
+      <publishTime>10/20/2021 13:15:47</publishTime>
+    </File>
+    <File Include="Views/EvolvoSiteHome/YoutubeVideo.cshtml">
+      <publishTime>10/20/2021 16:39:59</publishTime>
+    </File>
+    <File Include="Views/EvolvoSiteLayout.cshtml">
+      <publishTime>02/12/2021 15:41:33</publishTime>
+    </File>
+    <File Include="Views/web.config">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,28 @@
+﻿@using Sitecore.Data
+@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc
+@model EvolvoBestPractice.Models.Page_Description
+@using Sitecore.Data.Items
+
+<!-- Header -->
+<header id="header" class="header">
+    <div class="header-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h1><span class="turquoise">@Model.Title()</span> @Model.Sub_Title()</h1>
+                        <p class="p-large">@Model.Description()</p>
+                        <a class="btn-solid-lg page-scroll" href="@Model.Discover()">@Model.ButtonText()</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="image-container">
+                        <img class="img-fluid" src="@Model.Image()" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of header-content -->
+</header> <!-- end of header -->
+<!-- end of header -->

@@ -1,0 +1,20 @@
+﻿@using Sitecore.Data.Items
+@using Sitecore.Data
+@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc
+@model EvolvoBestPractice.Models.SocialIcons
+
+<div class="col-md-4">
+    <div class="footer-col last">
+        <h4>Social Media</h4>
+        @for (int i = 0; i < Model.ChildMember().Count; i++)
+        {
+            <span class="fa-stack">
+                <a href="@Model.ChildMember()[i].Link">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="@Model.ChildMember()[i].Icon"></i>
+                </a>
+            </span>
+        }
+    </div>
+</div> <!-- end of col -->

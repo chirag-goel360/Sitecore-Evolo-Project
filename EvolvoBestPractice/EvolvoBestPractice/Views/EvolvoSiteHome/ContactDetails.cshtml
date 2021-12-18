@@ -1,0 +1,17 @@
+﻿@using Sitecore.Data.Items
+@using Sitecore.Data
+@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc
+@model EvolvoBestPractice.Models.ContactInfo
+
+<div class="row">
+    <div class="col-lg-12">
+        <h2>@Model.MainTitle()</h2>
+        <ul class="list-unstyled li-space-lg">
+            <li class="address">@Model.Title()</li>
+            <li><i class="fas fa-map-marker-alt"></i>@Model.Location()</li>
+            <li><i class="fas fa-phone"></i><a class="turquoise" href="tel:003024630820">+@Model.Telephone()</a></li>
+            <li><i class="fas fa-envelope"></i><a class="turquoise" href="mailto:office@evolo.com">@Model.Email()</a></li>
+        </ul>
+    </div> <!-- end of col -->
+</div> <!-- end of row -->

@@ -1,0 +1,617 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Glass.Mapper.Sc.WebForms</name>
+    </assembly>
+    <members>
+        <member name="T:Glass.Mapper.Sc.Web.WebForms.Ui.AbstractGlassPage">
+            <summary>
+            Class AbstractGlassPage
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.Ui.AbstractGlassPage.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Glass.Mapper.Sc.Web.WebForms.Ui.AbstractGlassPage"/> class.
+            </summary>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Web.WebForms.Ui.AbstractGlassPage.WebContext">
+            <summary>
+            Represents the current Sitecore context
+            </summary>
+            <value>The sitecore context.</value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Web.WebForms.Ui.AbstractGlassPage.IsInEditingMode">
+            <summary>
+            Gets a value indicating whether this instance is in editing mode.
+            </summary>
+            <value><c>true</c> if this instance is in editing mode; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Web.WebForms.Ui.AbstractGlassPage.GlassHtml">
+            <summary>
+            Access to rendering helpers
+            </summary>
+            <value>The glass HTML.</value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Web.WebForms.Ui.AbstractGlassPage.LayoutItem">
+            <summary>
+            Returns either the item specified by the DataSource or the current context item
+            </summary>
+            <value>The layout item.</value>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.Ui.AbstractGlassPage.Editable``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Object)">
+            <summary>
+            Makes a field editable via the Page Editor. Use the Model property as the target item, e.g. model =&gt; model.Title where Title is field name.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="model">The model.</param>
+            <param name="field">The field.</param>
+            <param name="parameters">The parameters.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.Ui.AbstractGlassPage.Editable``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Linq.Expressions.Expression{System.Func{``0,System.String}},System.Object)">
+            <summary>
+            Makes a field editable via the Page Editor. Use the Model property as the target item, e.g. model =&gt; model.Title where Title is field name.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="model">The model.</param>
+            <param name="field">The field.</param>
+            <param name="standardOutput">The standard output.</param>
+            <param name="parameters">The parameters.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.Ui.AbstractGlassPage.RenderImage``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Object,System.Boolean,System.Boolean)">
+            <summary>
+            Renders an image allowing simple page editor support
+            </summary>
+            <typeparam name="T">The model type</typeparam>
+            <param name="model">The model that contains the image field</param>
+            <param name="field">A lambda expression to the image field, should be of type Glass.Mapper.Sc.Fields.Image</param>
+            <param name="parameters">Image parameters, e.g. width, height</param>
+            <param name="isEditable">Indicates if the field should be editable</param>
+            <param name="outputHeightWidth">Indicates if the height and width attributes should be outputted when rendering the image</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.Ui.AbstractGlassPage.BeginRenderLink``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Object,System.Boolean)">
+            <summary>
+            Render HTML for a link with contents
+            </summary>
+            <typeparam name="T">The model type</typeparam>
+            <param name="model">The model</param>
+            <param name="field">The link field to user</param>
+            <param name="attributes">Any additional link attributes</param>
+            <param name="isEditable">Make the link editable</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.Ui.AbstractGlassPage.RenderLink``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Object,System.Boolean,System.String)">
+            <summary>
+            Render HTML for a link
+            </summary>
+            <typeparam name="T">The model type</typeparam>
+            <param name="model">The model</param>
+            <param name="field">The link field to user</param>
+            <param name="attributes">Any additional link attributes</param>
+            <param name="isEditable">Make the link editable</param>
+            <param name="contents">Content to override the default decription or item name</param>
+            <returns></returns>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Web.WebForms.Ui.AbstractGlassUserControl">
+            <summary>
+            Class AbstractGlassUserControl
+            </summary>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Web.WebForms.Ui.AbstractGlassUserControl.IsInEditingMode">
+            <summary>
+            Gets a value indicating whether this instance is in editing mode.
+            </summary>
+            <value><c>true</c> if this instance is in editing mode; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Web.WebForms.Ui.AbstractGlassUserControl.WebContext">
+            <summary>
+            Represents the current Sitecore context
+            </summary>
+            <value>The sitecore context.</value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Web.WebForms.Ui.AbstractGlassUserControl.GlassHtml">
+            <summary>
+            Access to rendering helpers
+            </summary>
+            <value>The glass HTML.</value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Web.WebForms.Ui.AbstractGlassUserControl.LayoutItem">
+            <summary>
+            Returns either the item specified by the DataSource or the current context item
+            </summary>
+            <value>The layout item.</value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Web.WebForms.Ui.AbstractGlassUserControl.ContextItem">
+            <summary>
+            Returns either the item specified by the current context item
+            </summary>
+            <value>The layout item.</value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Web.WebForms.Ui.AbstractGlassUserControl.DataSourceItem">
+            <summary>
+            Returns the item specificed by the data source only. Returns null if no datasource set
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.Ui.AbstractGlassUserControl.GetContext``1(Glass.Mapper.Sc.GetKnownOptions)">
+            <summary>
+            Returns the Context Item as strongly typed
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.Ui.AbstractGlassUserControl.GetDataSource``1(Glass.Mapper.Sc.GetKnownOptions)">
+            <summary>
+            Returns the Data Source Item as strongly typed
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.Ui.AbstractGlassUserControl.GetLayoutItem``1(Glass.Mapper.Sc.GetKnownOptions)">
+            <summary>
+            Returns the DataSource item or the Context Item as strongly typed
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.Ui.AbstractGlassUserControl.Editable``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Object)">
+            <summary>
+            Makes a field editable via the Page Editor. Use the Model property as the target item, e.g. model =&gt; model.Title where Title is field name.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="model">The model.</param>
+            <param name="field">The field.</param>
+            <param name="parameters">The parameters.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.Ui.AbstractGlassUserControl.Editable``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Linq.Expressions.Expression{System.Func{``0,System.String}},System.Object)">
+            <summary>
+            Makes a field editable via the Page Editor. Use the Model property as the target item, e.g. model =&gt; model.Title where Title is field name.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="model">The model.</param>
+            <param name="field">The field.</param>
+            <param name="standardOutput">The standard output.</param>
+            <param name="parameters">The parameters.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.Ui.AbstractGlassUserControl.RenderImage``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Object,System.Boolean,System.Boolean)">
+            <summary>
+            Renders an image allowing simple page editor support
+            </summary>
+            <typeparam name="T">The model type</typeparam>
+            <param name="model">The model that contains the image field</param>
+            <param name="field">A lambda expression to the image field, should be of type Glass.Mapper.Sc.Fields.Image</param>
+            <param name="parameters">Image parameters, e.g. width, height</param>
+            <param name="isEditable">Indicates if the field should be editable</param>
+            <param name="outputHeightWidth">Indicates if the height and width attributes should be outputted when rendering the image</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.Ui.AbstractGlassUserControl.BeginRenderLink``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Object,System.Boolean)">
+            <summary>
+            Render HTML for a link with contents
+            </summary>
+            <typeparam name="T">The model type</typeparam>
+            <param name="model">The model</param>
+            <param name="field">The link field to user</param>
+            <param name="attributes">Any additional link attributes</param>
+            <param name="isEditable">Make the link editable</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.Ui.AbstractGlassUserControl.RenderLink``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Object,System.Boolean,System.String)">
+            <summary>
+            Render HTML for a link
+            </summary>
+            <typeparam name="T">The model type</typeparam>
+            <param name="model">The model</param>
+            <param name="field">The link field to user</param>
+            <param name="attributes">Any additional link attributes</param>
+            <param name="isEditable">Make the link editable</param>
+            <param name="contents">Content to override the default decription or item name</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.Ui.AbstractGlassUserControl.BeginEditFrame``1(``0,System.String,System.Linq.Expressions.Expression{System.Func{``0,System.Object}}[])">
+            <summary>
+            Returns an Sitecore Edit Frame
+            </summary>
+            <returns>
+            GlassEditFrame.
+            </returns>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Web.WebForms.Ui.AbstractGlassWebControl">
+            <summary>
+                Class AbstractGlassUserControl
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.Ui.AbstractGlassWebControl.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:Glass.Mapper.Sc.Web.WebForms.Ui.AbstractGlassUserControl" /> class.
+            </summary>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Web.WebForms.Ui.AbstractGlassWebControl.IsInEditingMode">
+            <summary>
+                Gets a value indicating whether this instance is in editing mode.
+            </summary>
+            <value>
+                <c>true</c> if this instance is in editing mode; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Web.WebForms.Ui.AbstractGlassWebControl.WebContext">
+            <summary>
+                Represents the current Sitecore context
+            </summary>
+            <value>The sitecore context.</value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Web.WebForms.Ui.AbstractGlassWebControl.GlassHtml">
+            <summary>
+                Access to rendering helpers
+            </summary>
+            <value>The glass HTML.</value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Web.WebForms.Ui.AbstractGlassWebControl.DataSourceItem">
+            <summary>
+                The custom data source for the sublayout
+            </summary>
+            <value>The data source.</value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Web.WebForms.Ui.AbstractGlassWebControl.LayoutItem">
+            <summary>
+                Returns either the item specified by the DataSource or the current context item
+            </summary>
+            <value>The layout item.</value>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.Ui.AbstractGlassWebControl.Editable``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Object)">
+            <summary>
+                Makes a field editable via the Page Editor. Use the Model property as the target item, e.g. model =&gt; model.Title where Title is field name.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="model">The model.</param>
+            <param name="field">The field.</param>
+            <param name="parameters">The parameters.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.Ui.AbstractGlassWebControl.Editable``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Linq.Expressions.Expression{System.Func{``0,System.String}},System.Object)">
+            <summary>
+                Makes a field editable via the Page Editor. Use the Model property as the target item, e.g. model =&gt; model.Title where Title is field name.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="model">The model.</param>
+            <param name="field">The field.</param>
+            <param name="standardOutput">The standard output.</param>
+            <param name="parameters">The parameters.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.Ui.AbstractGlassWebControl.RenderImage``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Object,System.Boolean,System.Boolean)">
+            <summary>
+                Renders an image allowing simple page editor support
+            </summary>
+            <typeparam name="T">The model type</typeparam>
+            <param name="model">The model that contains the image field</param>
+            <param name="field">A lambda expression to the image field, should be of type Glass.Mapper.Sc.Fields.Image</param>
+            <param name="parameters">Image parameters, e.g. width, height</param>
+            <param name="isEditable">Indicates if the field should be editable</param>
+            <param name="outputHeightWidth">Indicates if the height and width attributes should be outputted when rendering the image</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.Ui.AbstractGlassWebControl.BeginEditFrame``1(``0,System.String,System.Linq.Expressions.Expression{System.Func{``0,System.Object}}[])">
+            <summary>
+            Returns an Sitecore Edit Frame
+            </summary>
+            <param name="model">The model that contains the image field</param>
+            <param name="title">The title for the edit frame</param>
+            <param name="fields">A lambda expression to the image field, should be of type Glass.Mapper.Sc.Fields.Image</param>
+            <returns>
+            GlassEditFrame.
+            </returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.Ui.AbstractGlassWebControl.BeginRenderLink``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Object,System.Boolean)">
+            <summary>
+                Render HTML for a link with contents
+            </summary>
+            <typeparam name="T">The model type</typeparam>
+            <param name="model">The model</param>
+            <param name="field">The link field to user</param>
+            <param name="attributes">Any additional link attributes</param>
+            <param name="isEditable">Make the link editable</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.Ui.AbstractGlassWebControl.RenderLink``1(``0,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Object,System.Boolean,System.String)">
+            <summary>
+                Render HTML for a link
+            </summary>
+            <typeparam name="T">The model type</typeparam>
+            <param name="model">The model</param>
+            <param name="field">The link field to user</param>
+            <param name="attributes">Any additional link attributes</param>
+            <param name="isEditable">Make the link editable</param>
+            <param name="contents">Content to override the default decription or item name</param>
+            <returns></returns>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Web.WebForms.Ui.GlassPage`1">
+            <summary>
+            Class GlassPage
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Web.WebForms.Ui.GlassPage`1.Model">
+            <summary>
+            Model to render on the sublayout
+            </summary>
+            <value>The model.</value>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.Ui.GlassPage`1.#ctor(Glass.Mapper.Sc.Web.WebForms.IWebFormsContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Glass.Mapper.Sc.Web.WebForms.Ui.GlassPage`1"/> class.
+            </summary>
+            <param name="context">The context.</param>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.Ui.GlassPage`1.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Glass.Mapper.Sc.Web.WebForms.Ui.GlassPage`1"/> class.
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.Ui.GlassPage`1.OnLoad(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Web.UI.Control.Load" /> event.
+            </summary>
+            <param name="e">The <see cref="T:System.EventArgs" /> object that contains the event data.</param>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.Ui.GlassPage`1.Editable(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Object)">
+            <summary>
+            Makes a field editable via the Page Editor. Use the Model property as the target item, e.g. model =&gt; model.Title where Title is field name.
+            </summary>
+            <param name="field">The field.</param>
+            <param name="parameters">The parameters.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.Ui.GlassPage`1.Editable(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Linq.Expressions.Expression{System.Func{`0,System.String}},System.Object)">
+            <summary>
+            Makes a field editable via the Page Editor. Use the Model property as the target item, e.g. model =&gt; model.Title where Title is field name.
+            </summary>
+            <param name="field">The field.</param>
+            <param name="standardOutput">The standard output.</param>
+            <param name="parameters">The parameters.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.Ui.GlassPage`1.RenderImage(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Object,System.Boolean,System.Boolean)">
+            <summary>
+            Renders an image allowing simple page editor support
+            </summary>
+            <typeparam name="T">The model type</typeparam>
+            <param name="model">The model that contains the image field</param>
+            <param name="field">A lambda expression to the image field, should be of type Glass.Mapper.Sc.Fields.Image</param>
+            <param name="parameters">Image parameters, e.g. width, height</param>
+            <param name="isEditable">Indicates if the field should be editable</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.Ui.GlassPage`1.BeginRenderLink(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Object,System.Boolean)">
+            <summary>
+            Render HTML for a link with contents
+            </summary>
+            <typeparam name="T">The model type</typeparam>
+            <param name="model">The model</param>
+            <param name="field">The link field to user</param>
+            <param name="attributes">Any additional link attributes</param>
+            <param name="isEditable">Make the link editable</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.Ui.GlassPage`1.RenderLink(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Object,System.Boolean,System.String)">
+            <summary>
+            Render HTML for a link
+            </summary>
+            <typeparam name="T">The model type</typeparam>
+            <param name="model">The model</param>
+            <param name="field">The link field to user</param>
+            <param name="attributes">Any additional link attributes</param>
+            <param name="isEditable">Make the link editable</param>
+            <param name="contents">Content to override the default decription or item name</param>
+            <returns></returns>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Web.WebForms.Ui.GlassUserControl`1">
+            <summary>
+            Class GlassUserControl
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.Ui.GlassUserControl`1.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Glass.Mapper.Sc.Web.WebForms.Ui.GlassUserControl`1"/> class.
+            </summary>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Web.WebForms.Ui.GlassUserControl`1.Model">
+            <summary>
+            Model to render on the sublayout
+            </summary>
+            <value>The model.</value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Web.WebForms.Ui.GlassUserControl`1.InferType">
+            <summary>
+            Gets or sets a value indicating whether [infer type].
+            </summary>
+            <value>
+              <c>true</c> if [infer type]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Web.WebForms.Ui.GlassUserControl`1.IsLazy">
+            <summary>
+            Gets or sets a value indicating whether this instance is lazy.
+            </summary>
+            <value>
+              <c>true</c> if this instance is lazy; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.Ui.GlassUserControl`1.GetModel">
+            <summary>
+            Gets the model.
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.Ui.GlassUserControl`1.Editable(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Object)">
+            <summary>
+            Makes a field editable via the Page Editor. Use the Model property as the target item, e.g. model =&gt; model.Title where Title is field name.
+            </summary>
+            <param name="field">The field.</param>
+            <param name="parameters">The parameters.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.Ui.GlassUserControl`1.Editable(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Linq.Expressions.Expression{System.Func{`0,System.String}},System.Object)">
+            <summary>
+            Makes a field editable via the Page Editor. Use the Model property as the target item, e.g. model =&gt; model.Title where Title is field name.
+            </summary>
+            <param name="field">The field.</param>
+            <param name="standardOutput">The standard output.</param>
+            <param name="parameters">The parameters.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.Ui.GlassUserControl`1.RenderImage(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Object,System.Boolean,System.Boolean)">
+            <summary>
+            Renders an image allowing simple page editor support
+            </summary>
+            <typeparam name="T">The model type</typeparam>
+            <param name="field">A lambda expression to the image field, should be of type Glass.Mapper.Sc.Fields.Image</param>
+            <param name="parameters">Image parameters, e.g. width, height</param>
+            <param name="isEditable">Indicates if the field should be editable</param>
+            <param name="outputHeightWidth">Whether to output the height and width attributes</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.Ui.GlassUserControl`1.BeginRenderLink(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Object,System.Boolean)">
+            <summary>
+            Render HTML for a link with contents
+            </summary>
+            <typeparam name="T">The model type</typeparam>
+            <param name="field">The link field to user</param>
+            <param name="attributes">Any additional link attributes</param>
+            <param name="isEditable">Make the link editable</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.Ui.GlassUserControl`1.RenderLink(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Object,System.Boolean,System.String)">
+            <summary>
+            Render HTML for a link
+            </summary>
+            <typeparam name="T">The model type</typeparam>
+            <param name="field">The link field to user</param>
+            <param name="attributes">Any additional link attributes</param>
+            <param name="isEditable">Make the link editable</param>
+            <param name="contents">Content to override the default decription or item name</param>
+            <returns></returns>
+        </member>
+        <member name="T:Glass.Mapper.Sc.Web.WebForms.Ui.GlassWebControl`1">
+            <summary>
+                Class GlassUserControl
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.Ui.GlassWebControl`1.#ctor(Glass.Mapper.Sc.Web.WebForms.IWebFormsContext)">
+            <summary>
+                Initializes a new instance of the <see cref="T:Glass.Mapper.Sc.Web.WebForms.Ui.GlassWebControl`1" /> class.
+            </summary>
+            <param name="context">The context.</param>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.Ui.GlassWebControl`1.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:Glass.Mapper.Sc.Web.WebForms.Ui.GlassWebControl`1" /> class.
+            </summary>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Web.WebForms.Ui.GlassWebControl`1.Model">
+            <summary>
+                Model to render on the sublayout
+            </summary>
+            <value>The model.</value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Web.WebForms.Ui.GlassWebControl`1.InferType">
+            <summary>
+                Gets or sets a value indicating whether [infer type].
+            </summary>
+            <value>
+                <c>true</c> if [infer type]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Glass.Mapper.Sc.Web.WebForms.Ui.GlassWebControl`1.Lazy">
+            <summary>
+                Gets or sets a value indicating whether this instance is lazy.
+            </summary>
+            <value>
+                <c>true</c> if this instance is lazy; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.Ui.GlassWebControl`1.GetModel">
+            <summary>
+                Gets the model.
+            </summary>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.Ui.GlassWebControl`1.OnLoad(System.EventArgs)">
+            <summary>
+                Raises the <see cref="E:System.Web.UI.Control.Load" /> event.
+            </summary>
+            <param name="e">
+                The <see cref="T:System.EventArgs" /> object that contains the event data.
+            </param>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.Ui.GlassWebControl`1.Editable(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Object)">
+            <summary>
+                Makes a field editable via the Page Editor. Use the Model property as the target item, e.g. model =&gt; model.Title where Title is field name.
+            </summary>
+            <param name="field">The field.</param>
+            <param name="parameters">The parameters.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.Ui.GlassWebControl`1.Editable(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Linq.Expressions.Expression{System.Func{`0,System.String}},System.Object)">
+            <summary>
+                Makes a field editable via the Page Editor. Use the Model property as the target item, e.g. model =&gt; model.Title where Title is field name.
+            </summary>
+            <param name="field">The field.</param>
+            <param name="standardOutput">The standard output.</param>
+            <param name="parameters">The parameters.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.Ui.GlassWebControl`1.RenderImage(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Object,System.Boolean,System.Boolean)">
+            <summary>
+                Renders an image allowing simple page editor support
+            </summary>
+            <typeparam name="T">The model type</typeparam>
+            <param name="model">The model that contains the image field</param>
+            <param name="field">A lambda expression to the image field, should be of type Glass.Mapper.Sc.Fields.Image</param>
+            <param name="parameters">Image parameters, e.g. width, height</param>
+            <param name="isEditable">Indicates if the field should be editable</param>
+            <param name="outputHeightWidth">Indicates if the height and width attributes should be outputted when rendering the image</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.Ui.GlassWebControl`1.BeginRenderLink(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Object,System.Boolean)">
+            <summary>
+                Render HTML for a link with contents
+            </summary>
+            <typeparam name="T">The model type</typeparam>
+            <param name="model">The model</param>
+            <param name="field">The link field to user</param>
+            <param name="attributes">Any additional link attributes</param>
+            <param name="isEditable">Make the link editable</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.Ui.GlassWebControl`1.RenderLink(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Object,System.Boolean,System.String)">
+            <summary>
+                Render HTML for a link
+            </summary>
+            <typeparam name="T">The model type</typeparam>
+            <param name="model">The model</param>
+            <param name="field">The link field to user</param>
+            <param name="attributes">Any additional link attributes</param>
+            <param name="isEditable">Make the link editable</param>
+            <param name="contents">Content to override the default decription or item name</param>
+            <returns></returns>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.WebFormsContext.GetDataSourceItem``1(System.Web.UI.Control)">
+            <summary>
+            Maps the data source of the control to a model
+            </summary>
+            <typeparam name="T">The type to return</typeparam>
+        </member>
+        <member name="M:Glass.Mapper.Sc.Web.WebForms.WebFormsContext.GetDataSourceItem``1(System.Web.UI.Control,Glass.Mapper.Sc.GetKnownOptions)">
+            <summary>
+            Maps the data source of the control to a model
+            </summary>
+            <typeparam name="T">The type to return</typeparam>
+            <param name="options">Options for how the model will be mapped</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

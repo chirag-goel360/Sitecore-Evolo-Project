@@ -1,0 +1,46 @@
+﻿@using Sitecore.Data.Items
+@using Sitecore.Data
+@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc
+@model EvolvoBestPractice.Models.Carousel
+
+<!-- Testimonials -->
+<div class="slider-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                @Html.Sitecore().Placeholder("values")
+            </div> <!-- end of col -->
+            <div class="col-lg-6">
+                <h2>Testimonials</h2>
+                <!-- Card Slider -->
+                <div class="slider-container">
+                    <div class="swiper-container card-slider">
+                        <div class="swiper-wrapper">
+                            @for (int val = 0; val < @Model.CarouselItems().Count; val++)
+                            {
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="@Model.CarouselItems()[val].Image" alt="alternative">
+                                        <div class="card-body">
+                                            <p class="testimonial-text">@Model.CarouselItems()[val].Details</p>
+                                            <p class="testimonial-author">@Model.CarouselItems()[val].Author - @Model.CarouselItems()[val].Role</p>
+                                        </div>
+                                    </div>
+                                </div> <!-- end of swiper-slide -->
+                            }
+                            <!-- end of slide -->
+                        </div> <!-- end of swiper-wrapper -->
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <!-- end of add arrows -->
+                    </div> <!-- end of swiper-container -->
+                </div> <!-- end of slider-container -->
+                <!-- end of card slider -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of slider-2 -->
+<!-- end of testimonials -->

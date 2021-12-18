@@ -1,0 +1,78 @@
+﻿@using Sitecore.Data.Items
+@using Sitecore.Data
+@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc
+@model EvolvoBestPractice.Models.Header
+
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <!-- Text Logo - Use this if you don't have a graphic logo -->
+    <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Evolo</a> -->
+    <!-- Image Logo -->
+    <a class="navbar-brand logo-image" href="index.html"><img src="~/AssetsEvolvoSite/images/logo.svg" alt="alternative"></a>
+    <!-- Mobile Menu Toggle Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-awesome fas fa-bars"></span>
+        <span class="navbar-toggler-awesome fas fa-times"></span>
+    </button>
+    <!-- end of mobile menu toggle button -->
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav ml-auto">
+            @for (int val = 0; val < Model.HeaderItems().Count; val++)
+            {
+                if (val == 0)
+                {
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#@Model.HeaderItems()[val].LinkText">@Model.HeaderItems()[val].Item <span class="sr-only">(current)</span></a>
+                    </li>
+                }
+                else if (Model.HeaderItems()[val].Item == "About")
+                {
+                    <!-- Dropdown Menu -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle page-scroll" href="#@Model.HeaderItems()[val].LinkText" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">@Model.HeaderItems()[val].Item</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            @{
+                                int total = Model.HeaderAboutItems().Count;
+                            }
+                            @for (int itemval = 0; itemval < Model.HeaderAboutItems().Count; itemval++)
+                            {
+
+                                if (itemval != total - 1)
+                                {
+                                    <a class="dropdown-item" href="@Model.HeaderAboutItems()[itemval].Link"><span class="item-text">@Model.HeaderAboutItems()[itemval].Item</span></a>
+                                    <div class="dropdown-items-divide-hr"></div>
+                                }
+                                else
+                                {
+                                    <a class="dropdown-item" href="@Model.HeaderAboutItems()[itemval].Link"><span class="item-text">@Model.HeaderAboutItems()[itemval].Item</span></a>
+                                }
+                            }
+                        </div>
+                    </li>
+                    <!-- end of dropdown menu -->
+                }
+                else
+                {
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#@Model.HeaderItems()[val].LinkText">@Model.HeaderItems()[val].Item</a>
+                    </li>
+                }
+            }
+        </ul>
+        <span class="nav-item social-icons">
+            <span class="fa-stack">
+                <a href="#your-link">
+                    <i class="fas fa-circle fa-stack-2x facebook"></i>
+                    <i class="fab fa-facebook-f fa-stack-1x"></i>
+                </a>
+            </span>
+            <span class="fa-stack">
+                <a href="#your-link">
+                    <i class="fas fa-circle fa-stack-2x twitter"></i>
+                    <i class="fab fa-twitter fa-stack-1x"></i>
+                </a>
+            </span>
+        </span>
+    </div>
+</nav> <!-- end of navbar -->
+<!-- end of navigation -->
